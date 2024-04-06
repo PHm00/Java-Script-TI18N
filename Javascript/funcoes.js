@@ -187,3 +187,126 @@ function numerosPares() {
 }
 
 
+
+function ateCem() {
+    var soma = 0;
+    for (var numero = 1; numero <= 100; numero++){
+        soma += numero;
+    }
+    document.getElementById("resultado").value = "A soma dos números de 1 a 100 é: " + soma;
+}
+
+ 
+function multiplo5() {
+    var resultado = document.getElementById("resultado"); // Elemento onde os resultados serão exibidos
+    resultado.value = ""; // Limpa o conteúdo anterior
+   
+    var multiplos = ""; // Variável para armazenar
+   
+    // Loop para encontrar e armazenar
+    for (var numero = 5; numero <= 50; numero += 5) {
+        multiplos += numero + ", "; // Adiciona o número 
+    }
+   
+    // Exibição dos múltiplos de 5
+    resultado.value = multiplos === "" ? "Não há múltiplos de 5 de 1 a 50." : "Os múltiplos de 5 de 1 a 50 são: " + multiplos.slice(0, -2); // Exibe os múltiplos sem a última vírgula e espaço ou mensagem de ausência de múltiplos
+}
+ 
+function indoAte(){
+    var num1; // Declarando variável 
+    var res = ""; // Inicializando a variável 
+ 
+    num1 = parseInt(document.getElementById("tpNum").value);
+ 
+    // Verificando
+    if (num1 > 0) {
+    // Loop para imprimir os números
+    for (var i = 1; i <= num1; i++) {
+        res += i + ", "; // Adicionando o número 
+    }
+    // Exibindo os números na página HTML
+    document.getElementById("resultado").value = "Os números de 1 a " + num1 +
+    " são: " + res.slice(0, -2); //
+    } else {
+    // Caso
+    document.getElementById("resultado").value = "O número fornecido não é válido. Por favor, insira um número maior que zero.";
+    }
+}
+ 
+function somaAte(){
+    var num1 = parseInt(document.getElementById("tpNum").value); // Declarando variável
+    var res = 0; // Inicializando a variável
+
+ 
+    // Verificando
+  if (num1 > 0) {
+    // Loop
+    for (var i = 1; i <= num1; i++) {
+        res += i
+    }
+    document.getElementById("resultado").value = "Os números de 1 a " + num1 + " é : " + res ;
+  } else {
+    // Caso o número fornecido não seja válido
+    document.getElementById("resultado").value = "O número fornecido não é válido. Por favor, insira um número maior que zero.";
+  }
+}
+
+function primosAte20(){
+    var resultado = "Números primos de 1 a 20: ";
+
+    for (var num = 1; num <= 20; num++) {
+        var primo = true;
+        //
+        
+      for (var i = 2; i < num; i++){
+        if (num % i === 0) {
+            primo = false;
+            break;
+        }
+      }
+        
+      
+      
+    
+     if (primo && num > 1) {
+        resultado += num + " ";
+     }
+    } 
+
+    document.getElementById("resultado").value = resultado;
+}
+
+
+function primoVerificar(){
+        var num1
+     
+        num1 = parseInt(document.getElementById("tpNum").value);
+     
+        // Verifica se o número é menor ou igual a 1
+        if (num1 <= 1) {
+            document.getElementById("resultado").value = "O número " + num1 + " não é primo.";
+            return;
+        }
+     
+        var primo = true; // Assume que o número é primo inicialmente
+     
+        // Loop para verificar se o número é divisível por algum número diferente de 1 e ele mesmo
+        for (var i = 2; i < num1; i++) {
+            if (num1 % i === 0) {
+                primo = false; // Se for divisível, não é primo
+                break; // Sai do loop
+            }
+        }
+     
+        // Exibe o resultado na página HTML
+        if (primo) {
+            document.getElementById("resultado").value = "O número " + num1 + " é primo.";
+        } else {
+            document.getElementById("resultado").value = "O número " + num1 + " não é primo.";
+        }
+    
+
+}
+
+
+

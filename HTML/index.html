@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/estilo.css"/>
     <script type="text/javascript" src="../Javascript/funcoes.js"></script>
     <title>Página Principal</title>
 </head>
 <body>
-    <form>
+    
+    <form>  
         <label name="pNum">Primeiro Número: </label>
         <input type="number" name="tpNum" id="tpNum"><br><br>
 
@@ -36,8 +38,12 @@
     <button type="submit" onclick="indoAte()">indoAte</button><br><br>
     <button type="submit" onclick="somaAte()">somaAte</button>
     <button type="submit" onclick="primosAte20()">primosAte20</button>
-    <button type="submit" onclick="primoVerificar()">primo verificar</button><br><br>
-
+    <button type="submit" onclick="primoVerificar()">primo verificar</button>
+    <button type="submit" onclick="fatorial()">fatorial</button><br><br>
+    <button type="submit" onclick="fibonacci()">fibonacci</button>
+    <button type="submit" onclick="imprimirParesEImpares()">imprimir Pares E Impares</button>
+    <button type="submit" onclick="verificarPrimos()">verificar Primos</button>
+    <button type="submit" onclick="verificarNumeroPerfeito()">verificar Numero Perfeito</button><br><br>
     <textArea id="resultado" rows="100" cols="30" readonly></textArea>
 </body>
 </html>

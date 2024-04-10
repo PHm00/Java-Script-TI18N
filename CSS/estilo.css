@@ -1,0 +1,52 @@
+body{
+    background-color: #ffffff;
+    margin: 0%;/* Espaço externo da página */
+    padding: 0%;/* Espaço Interno da Página */
+}
+
+button[type="submit"]{
+
+   
+    
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    padding: 12px 24px;
+    background-color: aqua;
+    color: #000000;
+    border: 2px solid black;
+    border-radius: 12px;
+    margin: 0 22px; /* Aumentei a margem horizontal para 20px */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button[type="submit"]:hover{
+    transform: scale(.95);
+    opacity: .25; 
+}
+
+form {
+    text-align: center;
+    margin-top: 20px;
+    border: 2px solid #ccc; /* Adiciona uma borda sólida de 2px com cor cinza claro */
+    border-radius: 8px; /* Adiciona bordas arredondadas */
+    padding: 20px; /* Adiciona espaço interno para o conteúdo */
+    max-width: 400px; /* Limita a largura máxima da form para melhor visualização */
+    margin: 20px auto; /* Centraliza a form horizontalmente na página */
+    background-color: #f9f9f9; /* Adiciona uma cor de fundo */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+}
+
+textArea#resultado {
+    font-size: 140%;
+    display: block;
+    margin: 20px auto;
+    width: 80%;
+    height: 300px;
+    resize: none;
+}
+
+
+    
